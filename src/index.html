@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" consent="Victor Gutierrez Rubiño">
+		<title>Calculadora</title>
+		<script type="text/javascript" src="javascript.js"></script>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="todaCalculadora">
+			<div class="screen">
+				<div id="pantalla"></div>
+				<div class="result">
+					<div id="resultadoAlternativo"></div>
+					<div id="resultado"></div>
+				</div>
+			</div>
+			<div id="calcBody" class="cuerpo">
+				<div class="filas">
+					<div class="botones mod" onclick="ponerNumero('.')">.</div>
+					<div class="botones mod" onclick="ponerNumero('%')">%</div>
+					<div class="botones mod" onclick="ponerNumero('x')">x</div>
+					<div class="botones mod" onclick="ponerNumero('/')">/</div>
+				</div>
+				<div class="filas">
+					<div class="botones" onclick="ponerNumero('9')">9</div>
+					<div class="botones" onclick="ponerNumero('8')">8</div>
+					<div class="botones" onclick="ponerNumero('7')">7</div>
+					<div class="botones mod" onclick="ponerNumero('+')">+</div>
+				</div>
+				<div class="filas">
+					<div class="botones" onclick="ponerNumero('6')">6</div>
+					<div class="botones" onclick="ponerNumero('5')">5</div>
+					<div class="botones" onclick="ponerNumero('4')">4</div>
+					<div class="botones mod" onclick="ponerNumero('-')">-</div>
+				</div>
+				<div class="filas">
+					<div class="botones" onclick="ponerNumero('3')">3</div>
+					<div class="botones" onclick="ponerNumero('2')">2</div>
+					<div class="botones" onclick="ponerNumero('1')">1</div>
+					<div class="botones" onclick="ponerNumero('0')">0</div>
+				</div>
+				<div class="filas">
+					<div class="b2" onclick="calcularOperaciones()">=</div>
+					<div class="b2" onclick="borrarTodaPantalla()">AC</div>
+				</div>
+				<div id="botonLateral1" onclick="cambiarBotones()"><</div>
+				<div id="botonLateral2" onclick="cambiarBotones()">></div>
+			</div>
+		</div>
+	</body>
+</html>

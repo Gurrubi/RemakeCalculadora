@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    /*background: linear-gradient(-40deg,#ff4455, #ffaa00);*/
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eeeeee90;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+}
+
+#botonLateral1, #botonLateral2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height:89.5%;
+    font-size: 30px;
+    border: 1px #eeeeee10 solid;
+    cursor: pointer;
+}
+
+#botonLateral1{
+    left: -10px;
+}
+#botonLateral2{
+    right: -10px;
+}
+
+.todaCalculadora{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #eeeeee10;
+    height: 552px;
+    width: 352px;
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+    border: 1px #eeeeee20 solid;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow:#67676730 3px 3px 3px ;
+}
+
+.todaCalculadora .screen{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 20%;
+    background-color: #eeeeee10;
+    border:1px #eeeeee20 solid ;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.todaCalculadora .screen #pantalla{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #eeeeee90;
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.todaCalculadora .screen .result{
+    position: relative;
+    display: flex;
+    height: 60%;
+    width: 100%;
+}
+
+.todaCalculadora .screen .result #resultadoAlternativo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    height: 100%;
+}
+
+.todaCalculadora .screen .result #resultado{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.todaCalculadora .cuerpo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 10px;
+}
+
+.todaCalculadora .cuerpo .filas{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.todaCalculadora .cuerpo .filas .botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63.25px;
+    width: 25%;
+    background-color: #eeeeee20;
+    border: 1px #eeeeee10 solid;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s ease;
+    border-radius: 2px;
+}
+
+.todaCalculadora .cuerpo .filas .b2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 63.25px;
+    border: 1px #eeeeee10 solid;
+    background-color: #eeeeee10;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.todaCalculadora .cuerpo .filas .b2:hover{
+    background-color: #eeeeee20;
+}
+
+.todaCalculadora .cuerpo .filas .botones:hover{
+    background-color: #eeeeee30;
+}
+
+.mod{
+    background-color: #eeeeee10 !important;
+    border: 1px #eeeeee10 solid !important;
+}
+
+.mod:hover{
+    background-color: #eeeeee20 !important;
+}
+
